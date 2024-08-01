@@ -57,7 +57,7 @@ class HomeViewController: UIViewController {
             guard let self = self else { return }
             
             if let foodData = data as? HomeResponse {
-                self.navigator?.goToDetail(foodData)
+                self.navigator.goToDetail(foodData)
             }
             
             self.deselectRow()
